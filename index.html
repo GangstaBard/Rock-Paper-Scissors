@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="app">
+    <header>
+      <h1>Human vs Computer</h1>
+      <h2>Do you have what it takes to save mankind?</h2>
+      <h3>Choose your weapon!</h3>
+    </header>
+
+    <main>
+      <button @click="showAlert">{{val1}}</button>
+    </main>
+
+    <footer>
+      <div class="first-block">
+        <span class="">You</span>
+        <span class="">Computer</span>
+      </div>
+
+      <div class="second-block">
+        <span>1</span>
+        <span>3</span>
+      </div>
+    </footer>
+  </body>
+</html>
