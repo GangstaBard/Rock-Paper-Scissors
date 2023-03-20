@@ -43,6 +43,23 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.block {
+  padding: 0.5rem;
+  border: #fff solid;
+  transition: all 0.4s;
+}
+
+.btn {
+  height: 2rem;
+}
+
+.block:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.3rem 1px;
+  transform: scale(1.1);
 }
 
 footer {
