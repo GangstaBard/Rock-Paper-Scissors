@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
   </head>
   <body id="app">
     <header>
@@ -24,27 +24,41 @@
 
     <main>
       <div class="block">
-        <img class="btn" id="rock" src=" cave-painting.png" />
+        <img
+          @click="chooseWeapon"
+          class="btn"
+          id="rock"
+          src=" cave-painting.png"
+        />
       </div>
 
       <div class="block">
-        <img class="btn" id="paper" src="document.png" />
+        <img @click="chooseWeapon" class="btn" id="paper" src="document.png" />
       </div>
 
       <div class="block">
-        <img class="btn" id="scissors" src="scissors-opened-tool-shape.png" />
+        <img
+          @click="chooseWeapon"
+          class="btn"
+          id="scissors"
+          src="scissors-opened-tool-shape.png"
+        />
       </div>
     </main>
 
     <footer>
+      <div>
+        <p v-if="winner">{{winner}}</p>
+      </div>
+
       <div class="first-block">
         <span class="">You</span>
         <span class="">Computer</span>
       </div>
 
       <div class="second-block">
-        <span>1</span>
-        <span>3</span>
+        <span>{{userWins}}</span>
+        <span>{{computerWins}}</span>
       </div>
     </footer>
   </body>
